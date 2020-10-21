@@ -10,10 +10,10 @@
 			<li class="w3-bar-item w3-button"><a href="index.php?page=home">Home</a></li>
 			<li class="w3-bar-item w3-button"><a href="index.php?page=module1">Module 1</a></li>
 			<li class="w3-bar-item w3-button"><a href="index.php?page=module2">Module 2</a></li>
-			<li class="w3-bar-item w3-button"><a href="index.php?page=module2">Module 3</a></li>
-			<li class="w3-bar-item w3-button"><a href="index.php?page=module2">Module 4</a></li>
-			<li class="w3-bar-item w3-button"><a href="index.php?page=module2">Module 5</a></li>
-			<li class="w3-bar-item w3-button"><a href="index.php?page=module2">Module 6</a></li>
+			<li class="w3-bar-item w3-button"><a href="index.php?page=module3">Module 3</a></li>
+			<li class="w3-bar-item w3-button"><a href="index.php?page=module4">Module 4</a></li>
+			<li class="w3-bar-item w3-button"><a href="index.php?page=module5">Module 5</a></li>
+			<li class="w3-bar-item w3-button"><a href="index.php?page=module6">Module 6</a></li>
 	</div>
     <?php
 	switch($load){
