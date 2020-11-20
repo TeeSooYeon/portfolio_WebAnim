@@ -1,0 +1,102 @@
+body{
+    width: auto;
+    height:auto;
+    background-image: url(svg/background_3.svg);
+    background-repeat: no-repeat;
+    padding: 0%;
+    overflow-x: hidden;
+}
+img{
+    position:absolute;
+}
+.roof{
+    top: 0%;
+}
+.wrapper{
+    height: 130%;
+}
+.butterfly{
+    z-index: 3;
+}
+.bee{
+    position: relative;
+    z-index: 2;
+    top: 40.9%;
+    right: 6%;
+}
+#beehive{
+    z-index: 1;
+}
+.sunflower{
+    position: relative;
+    bottom: -15%;
+    z-index: 1;
+    left: 0%;
+}
+.sunflowerhead{
+    animation: rotate 5s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+.sunflowerhead1{
+    animation: rotate 2s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+.sunflowerhead2{
+    animation: rotate 2s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+.sunflowerhead3{
+    animation: rotate 5s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+.sunflowerhead4{
+    animation: rotate 4s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+.sunflowerhead5{
+    animation: rotate 2s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+.sunflowerhead6{
+    animation: rotate 3s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+.sunflowerhead7{
+    animation: rotate 4s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+.sunflowerhead8{
+    animation: rotate 2s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+.sunflowerhead9{
+    animation: rotate 5s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+.sunflowerhead10{
+    animation: rotate 3s infinite;
+    transform-origin: center;
+    animation-timing-function: linear;
+}
+@keyframes rotate{
+    0%{transform: translate(0,0);}
+    50%{transform:translate(8px,0)rotate(2deg);}
+    100%{transform:translate(0,0);}
+}
+.footer{
+    position: relative;
+    bottom: 0%;
+    height: auto;
+    width: 100%;
+    z-index: -3;
+}
