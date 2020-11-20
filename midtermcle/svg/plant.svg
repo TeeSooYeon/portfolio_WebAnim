@@ -7,8 +7,17 @@
 	.st1{fill:#91D896;stroke:#0D5907;stroke-width:0.25;stroke-miterlimit:10;}
 	.st2{fill:#A67C52;stroke:#603813;stroke-width:2;stroke-miterlimit:10;}
 	.st3{fill:#B2967D;stroke:#603813;stroke-width:2;stroke-miterlimit:10;}
+
+	#plant{
+		animation: sway 2.5s infinite linear;
+		transform-origin: bottom;
+	}
+	@keyframes sway{
+		50%{transform: skewX(-3deg);}
+		100%{transform: skewX(0deg);}
+	}
 </style>
-<g>
+<g id="plant">
 	<path class="st0" d="M65.35,244.1l35.91-28.73c4.99-3.99,5.73-11.3,1.64-16.21l-26.59-31.91c-6.35-7.62-6.35-18.68,0-26.3
 		l29.46-35.36c2.46-2.95,10.5-8.83,10.24-12.54c-0.08-1.18-0.19-2.35-0.03-3.52l3.13-22.79l1.18,22.94
 		c-0.24,9.65-5.48,15.86-11.41,22.97l-26.54,31.85c-4.63,5.56-4.63,13.62,0,19.18l27.03,32.44c6.45,7.74,9.98,17.49,9.98,27.56
