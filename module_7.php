@@ -4,6 +4,7 @@
         <div class="w3-container w3-grey">
             <h2>Learning Task 7.1</h2>
 	    </div>
+<div class="w3-container">
        <div style="position: absolute; top: 50px; left: 50px; background-color: rgb(193, 241, 225);"><canvas id="hat" width="200" height="200"></canvas>
         </div>
         <div style="position: absolute; top: 50px; left: 300px; background-color: rgb(193, 241, 225);"><canvas id="wine" width="200" height="200"></canvas>
@@ -20,6 +21,7 @@
         </div>
         <div style="position: absolute; top: 300px; left: 50px; background-color: rgb(193, 241, 225);"><canvas id="dedhead" width="200" height="200"></canvas>
         </div>
+</div>
     </div>
 </html>
 <script type="text/javascript" src="jsC/hat.js"></script>
