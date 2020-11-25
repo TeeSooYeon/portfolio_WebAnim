@@ -18,6 +18,7 @@
 			<a class="w3-bar-item w3-button" href="index.php?page=module5">Module 5</a>
 			<a class="w3-bar-item w3-button" href="index.php?page=module6">Module 6</a>
 			<a class="w3-bar-item w3-button" href="https://toquero-portfolio.herokuapp.com/midtermcle/midterm.html">Culminating Activity Midterm</a>
+			<a class="w3-bar-item w3-button" href="https://toquero-portfolio.herokuapp.com/cenvas/canvas.html">Module 7</a>
 	</div>
 	<div>
 		<button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">&#9776;</button>
