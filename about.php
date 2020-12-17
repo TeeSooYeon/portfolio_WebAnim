@@ -1,126 +1,35 @@
 <html>
     <link rel="stylesheet" href="css/style_1.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="css/mystyle.css">
-<body>
-<div class="slideshow-container">
-  <div class="slideshow-inner">
-      <div class="mySlides fade w3-animate-left">
-              <img  src="src/cssbg.svg"/>
-              <a href="index.php?page=css"><div class="text">CSS</div></a>
-      </div>
-      <div class="mySlides fade w3-animate-left">
-          <img  src="src/svgbg.svg"/>
-          <a href="index.php?page=svg"><div class="text">SVG</div></a>
-      </div>
-      <div class="mySlides fade w3-animate-left">
-          <img  src="src/canvasbg.svg"/>
-          <a href="index.php?page=module7"><div class="text">CANVAS</div></a>
-      </div>
-      <div class="mySlides fade w3-animate-left">
-          <img  src="src/aboutbg.svg"/>
-          <a href="index.php?page=about"><div class="text">ABOUT</div></a>
-      </div>
-  </div>
-
-    <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
-    <a class="next" onclick='plusSlides(1)'>&#10095;</a>
-  <br/>
-  <div style='text-align: center;'>
-    <span class="dot" onclick='currentSlide(1)'></span>
-    <span class="dot" onclick='currentSlide(2)'></span>
-    <span class="dot" onclick='currentSlide(3)'></span>
-    <span class="dot" onclick='currentSlide(4)'></span>
-  </div>
-</div>
-<div class="bodY">
-<h1 style="text-align: center;position:relative;top:25%">Featured Works</h1>
-  <a href="https://thealps-cle.herokuapp.com/" target="_blank">
-    <div class="audiobox" style="position: absolute; left:20%; top:100%"><h2 style="position: relative;top:20%">The Alps Website</h2>
-      <img style="max-height: 100%;max-width:100%" src="src/mountain.svg">
-      <div class="snow">
-          <div class="flake1"></div>
-          <div class="flake2"></div>
-          <div class="flake3"></div>
-          <div class="flake4"></div>
-          <div class="flake5"></div>
-          <div class="flake6"></div>
-          <div class="flake7"></div>
-          <div class="flake8"></div>
-      </div>
-    </div>
-  </a>
-
-  <a href="https://toquero-portfolio.herokuapp.com/midtermcle/midterm.html" target="_blank">
-    <div class="audiobox" style="position: absolute; right:20%; top:100%; height:408px"><h2 style="position: relative;top:0%;padding-top:45px">Floom Animated Garden</h2>
-      <img style="max-height: 100%;max-width:100%" src="src/flowershop.svg">
-    </div>
-  </a>
-</div>
-<script>
-var slideIndex = 1;
-
-var myTimer;
-
-var slideshowContainer;
-
-window.addEventListener("load",function() {
-    showSlides(slideIndex);
-    myTimer = setInterval(function(){plusSlides(1)}, 3000);
-
-    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
- 
-    slideshowContainer.addEventListener('mouseenter', pause)
-    slideshowContainer.addEventListener('mouseleave', resume)
-})
-
-function plusSlides(n){
-  clearInterval(myTimer);
-  if (n < 0){
-    showSlides(slideIndex -= 1);
-  } else {
-   showSlides(slideIndex += 1); 
-  }
-
-  if (n === -1){
-    myTimer = setInterval(function(){plusSlides(n + 2)}, 3000);
-  } else {
-    myTimer = setInterval(function(){plusSlides(n + 1)}, 3000);
-  }
-}
-function currentSlide(n){
-  clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(n + 1)}, 3000);
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n){
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-pause = () => {
-  clearInterval(myTimer);
-}
-
-resume = () =>{
-  clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(slideIndex)}, 3000);
-}
-</script>
-</body>
-<div>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&family=Russo+One&display=swap" rel="stylesheet">
+    <body>
+        <h3 style="position: absolute;top:35%;left:33%">Student, Programmer, Web Designer and a Friend.</h3>
+            <div id='tagline'>
+                <div class='visible'>
+                    <ul>
+                    <li>student</li>
+                    <li>web designer</li>
+                    <li>programmer</li>
+                    <li>friend</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="audiobox" style="height:fit-content;position: absolute; left:30%; top:55%;cursor:pointer;">
+                <img src="src/me.svg">
+            </div>
+            <div class="audiobox" style="height:fit-content;position: absolute; left:54%; top:55%;cursor:pointer;"><h3 style="text-align:center;margin-bottom:0">Personal Logo</h3>
+                <img src="src/logo.svg">
+            </div>
+        <div class="des">
+            <p>Currently Studying in a university, I sometimes create my own vector illustrations, icons or logos, I also play video games, design and create websites.
+                To know more follow me on different platforms, Thank you for visiting.
+            </p>
+        </div>
+    </body>
+<div style="position:relative;bottom:-1200px;">
+    <div>
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 			viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
 			<defs>
@@ -228,5 +137,6 @@ resume = () =>{
 </svg>
   </div>
   </a>
+</div>
 </div>
 </html>
